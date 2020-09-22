@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJECTZERO</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="scripts/app.js"></script>
+    <script src="scripts/app.js" defer></script>
 </head>
 <body>
 
@@ -14,20 +15,28 @@
 
     <!-- 'SCOREBOARD' --> 
 
-    <h1>TOMAGOTCHI</h1>
-    <span id = "name"> NAME: GARY </span>
+    <h1>BIKINI BOTTOM</h1>
+    <span id = "name"> NAME: Gary the Snail </span>
     <span id = "age"> AGE: 1 </span>
-    <span id = "hunger"> HUNGER:1 </span>
-    <span id = "boredom"> BOREDOM: 1 </span>
+    <span id = "hunger"> HUNGER: </span>
+    <span id = "boredom"> BOREDOM:  </span>
+    <span id = "sleep"> SLEEPINESS:</span>
+    <span id = "timer">TIME TIL DEATH: 240s</span>
 
     <!-- BEGIN BUTTON -->
 
     <div class="begin">
-    <button>BEGIN</button>
+        <button>BEGIN</button>
     </div>
-
 </header>
 
 
+
+<!------FEED,PET, LIGHTS BUTTON -->
+    <div class="toggle">
+        <button id = "feed">FEED</button>
+        <button id = "pet">PET ME</button>
+        <button id="lights">LIGHTS</button>
+    </div>
 </body>
 </html>
