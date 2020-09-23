@@ -27,7 +27,7 @@ let time = startTime;
 let hunger = 5;
 let boredom = 5;
 let sleep = 5;
-
+let gameOver = false;
 
 
 
@@ -89,7 +89,7 @@ const startTimer = function() {
             }
            
            
-            //-----increment hunger,boredom, sleep every 15 seconds----//
+            //-----increment hunger,boredom, sleep every 10 seconds----//
             if ( time % 10 === 0) {
 
                 //increment hunger 1
@@ -109,31 +109,47 @@ const startTimer = function() {
             //if hunger reaches 10 gary dies, game over
             if (hunger >= 10 ) {
                 
-                if (alert('BARNACLES!! GARY HAS DIED!! CLICK OK TO PLAY AGAIN')) {}
+                gameOver=true; 
                 //after it alerts reset the game
-                    else clearInterval(timer);
+                     
 
             } 
             //if boredom reaches 10 gary dies, game over
             if (boredom >= 10 ) {
 
-                if (alert('BARNACLES!! GARY HAS DIED!! CLICK OK TO PLAY AGAIN')) {}
+                gameOver=true;
                 //after it alerts reset the game
-                else clearInterval(timer);
+                 
             } 
             //if sleep reaches 10 gary dies, game over
             if (sleep >= 10 ) {
                  
                 //after it alerts reset the game
-                if (confirm('Successful Message')) {}
-                   else clearInterval(timer);  
+                gameOver=true;
+                      
+            }   
+             if (gameOver === true) { 
+
+                    alert('GAME OVER');
+                    clearInterval(timer)
+                    resetGame();
+                    startTimer();
+                }
                 
-            }    
+
         }, 1000);
         
     };
 
+    const resetGame = function() {
+          hunger = 5;
+          sleep = 5;
+          boredom = 5; 
+          time = 240;   
+          gameOver = false;  
 
+    }
+    
 //ADD EVENT LISTENER FOR FEED BUTTON
 
 $('#feed').on('click', function() {
@@ -190,3 +206,5 @@ $('#lights').on('click', function() {
 // You pet should die if Hunger, Boredom, or Sleepiness hits 10.
 // Morph your pet at certain ages.
 // Animate your pet across the screen while it's alive.
+
+
