@@ -106,24 +106,29 @@ const startTimer = function() {
             }
 
 
-            //if hunger,boredom,sleep reaches 10 gary dies, game over
+            //if hunger reaches 10 gary dies, game over
             if (hunger >= 10 ) {
+                
+                if (alert('BARNACLES!! GARY HAS DIED!! CLICK OK TO PLAY AGAIN')) {}
+                //after it alerts reset the game
+                    else clearInterval(timer);
 
-              alert('BARNACLES!! GARY HAS DIED!!')
-                return; //after it alerts reset the game
             } 
-            
+            //if boredom reaches 10 gary dies, game over
             if (boredom >= 10 ) {
 
-                alert('BARNACLES!! GARY HAS DIED!!')
-                return;
+                if (alert('BARNACLES!! GARY HAS DIED!! CLICK OK TO PLAY AGAIN')) {}
+                //after it alerts reset the game
+                else clearInterval(timer);
             } 
-
+            //if sleep reaches 10 gary dies, game over
             if (sleep >= 10 ) {
-
-                alert('BARNACLES!! GARY HAS DIED!!')
-                return;
-            } 
+                 
+                //after it alerts reset the game
+                if (confirm('Successful Message')) {}
+                   else clearInterval(timer);  
+                
+            }    
         }, 1000);
         
     };
