@@ -37,10 +37,10 @@ class Pet {
     constructor(name = 'gary') {
 
         this.name = name;
-        this.age = 5;
-        this.hunger = 5;
-        this.boredom = 5;
-        this.sleep = 5;
+        this.age = 0;
+        this.hunger = 0;
+        this.boredom = 0;
+        this.sleep = 0;
     }
 };
 
@@ -62,6 +62,16 @@ $('.begin').on('click', function() {
     startTimer();
 });
 
+
+//create function to reset the game after game over alert
+const resetGame = function() {
+    hunger = 5;
+    sleep = 5;
+    boredom = 5; 
+    time = 240; 
+    gameOver = false;  
+
+}
 //CREATE TIMER FUNCTION THAT STARTS AT 240 and DECREMENTS TO 0
 const startTimer = function() {
     const timer = setInterval(function () {
@@ -110,7 +120,7 @@ const startTimer = function() {
             if (hunger >= 10 ) {
                 
                 gameOver=true; 
-                //after it alerts reset the game
+                
                      
 
             } 
@@ -118,38 +128,29 @@ const startTimer = function() {
             if (boredom >= 10 ) {
 
                 gameOver=true;
-                //after it alerts reset the game
+                
                  
             } 
             //if sleep reaches 10 gary dies, game over
             if (sleep >= 10 ) {
                  
-                //after it alerts reset the game
+                
                 gameOver=true;
                       
             }   
-             if (gameOver === true) { 
+            //if gameOver is true then reset the game
+            if (gameOver === true) { 
 
-                    alert('GAME OVER');
-                    clearInterval(timer)
+                    //after it alerts reset the game
+                    alert('BARNACLES!!! GARY IS DEAD!!');
+                    
                     resetGame();
-                    startTimer();
-                }
-                
+                   
+                }    
+        }, 1000); 
+;}
 
-        }, 1000);
-        
-    };
 
-    const resetGame = function() {
-          hunger = 5;
-          sleep = 5;
-          boredom = 5; 
-          time = 240;   
-          gameOver = false;  
-
-    }
-    
 //ADD EVENT LISTENER FOR FEED BUTTON
 
 $('#feed').on('click', function() {
