@@ -37,10 +37,10 @@ class Pet {
     constructor(name = 'gary') {
 
         this.name = name;
-        this.age = 1;
-        this.hunger = 1;
-        this.boredom = 1;
-        this.sleep = 1;
+        this.age = 5;
+        this.hunger = 5;
+        this.boredom = 5;
+        this.sleep = 5;
     }
 };
 
@@ -110,7 +110,7 @@ const startTimer = function() {
             if (hunger >= 10 ) {
 
               alert('BARNACLES!! GARY HAS DIED!!')
-                return;
+                return; //after it alerts reset the game
             } 
             
             if (boredom >= 10 ) {
@@ -133,8 +133,12 @@ const startTimer = function() {
 
 $('#feed').on('click', function() {
 
+    
     // /click feed button to decrement hunger by 1 
-    hunger--;
+    //if hunger reaches 0, stop decrementing
+    if (hunger > 1) {
+        hunger--;
+    }
 
     //update DOM
     $(`#hunger`).text(`HUNGER: ${hunger}`)
@@ -145,9 +149,10 @@ $('#feed').on('click', function() {
 
 $('#pet').on('click', function() {
 
-    //click pet me button to decrement boredom by 1
+    //click pet me button to decrement boredom by 1, stop decrementing at 1
+    if (boredom > 1) {
     boredom--;
-
+    }
     //update DOM
     $(`#boredom`).text(`BOREDOM: ${boredom}`)
     
@@ -157,13 +162,12 @@ $('#pet').on('click', function() {
 
 $('#lights').on('click', function() {
 
-    //click lights function to decrement sleepiness by 1
+    //click lights function to decrement sleepiness by 1, stop decrementing at 1
+    if ( sleep > 1) {
     sleep--;
-
+    }
     //update DOM
     $(`#sleep`).text(`SLEEPINESS: ${sleep}`)
-
-
 
 });
 
@@ -173,17 +177,6 @@ $('#lights').on('click', function() {
 
 
 
-
-//create function to toggle the buttons
-
-
-
-
-// Display the following metrics for your pet:
-// Hunger (1-10 scale)
-// Sleepiness (1-10 scale)
-// Boredom (1-10 scale)
-// Age
 
 // Add the ability to name your pet.
 // Style the page.
