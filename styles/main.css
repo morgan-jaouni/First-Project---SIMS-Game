@@ -112,14 +112,32 @@ h3 .begin {
    
 
   /* position pet character in background image */
+.container #bob {
+  position: absolute;
+  top: 18vh;
+  right: 65vh;
+
+  animation: linear infinite alternate;
+  animation-name: linear;
+  animation-duration: 2s;
+}
+
+@keyframes linear {
+    0% {
+      
+      transform: translateY(0);
+    }
+    100% {
+      
+      transform: translateY(-70%);
+    }
+}
 
 .container #gary {
   position: absolute;
   top: 45vh;
   right: 42vh;
   height: 75px;
-  animation-name: leftRight;
-  
   animation: 
     nudge 25s infinite;
     

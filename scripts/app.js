@@ -58,13 +58,11 @@ class Pet {
 // ADD EVENT LISTENER FOR BEGIN BUTTON
 $('.begin').on('click', function() {
     // console.log('clicked..')
-
+   
     startTimer();
+    
 });
 
-setTimeout(function() {
-    $("#gary").show();
-},2500);
 //create function to reset the game after game over alert
 const resetGame = function() {
     hunger = 5;
@@ -194,8 +192,6 @@ $('#lights').on('click', function() {
 });
 
 
-
-// Display a character of your choice on the screen to represent your pet
 
 
 
