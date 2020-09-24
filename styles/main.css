@@ -23,7 +23,7 @@ h2 {
     align-items: center;
     justify-content: center;
     border-style: dashed;
-    border-width: 3px;
+    border-width: 7px;
     
     border-color:gold;
 }
@@ -46,22 +46,21 @@ h3 .begin {
 
 .container {
     margin: 0;
+    padding: 0;
+    position: relative;
     justify-content: center;
-    display:flex;
-    border-style: dashed;
-    border-width: 3px;                
-    border-color: gold; 
+    display:flex;   
 }
 
 /* //CONTAINER STYLING DECORATION ONLY  MODELED AFTER W3SCHOOLS */
 .container #feed {
     flex-direction: column;
     position: absolute;
-    top: 70%;
-    left: 22%;
+    top: 75%;
+    left: 21%;
     background-color:gold;
     color: rebeccapurple;
-    font-size: 15px;
+    font-size: 11.5px;
     padding: 12px 24px;
     border-style: dashed;
     border-width: 3px;
@@ -73,7 +72,7 @@ h3 .begin {
     flex-direction: column;
     position: absolute;
     top: 60%;
-    left: 22%;
+    left: 21%;
     background-color:gold;
     color:rebeccapurple;
     font-size: 14px;
@@ -87,8 +86,8 @@ h3 .begin {
 .container #pet {
     flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 22%;
+    top: 45%;
+    left: 21%;
     background-color:gold;
     color:rebeccapurple;
     font-size:14px;
@@ -110,11 +109,22 @@ h3 .begin {
     display: flex;
     flex-direction: column;
   }
+   
 
+  /* position pet character in background image */
 
+.container #gary {
+  position: absolute;
+  top: 45vh;
+  right: 42vh;
+  height: 75px;
 
- 
+}
 
-
+.container #background {
+    border-style: dashed;
+    border-width: 15px;                
+    border-color: gold;
+}
 
   
