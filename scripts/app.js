@@ -62,7 +62,9 @@ $('.begin').on('click', function() {
     startTimer();
 });
 
-
+setTimeout(function() {
+    $("#gary").show();
+},2500);
 //create function to reset the game after game over alert
 const resetGame = function() {
     hunger = 5;

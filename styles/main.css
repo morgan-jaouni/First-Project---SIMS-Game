@@ -118,8 +118,47 @@ h3 .begin {
   top: 45vh;
   right: 42vh;
   height: 75px;
-
+  animation-name: leftRight;
+  
+  animation: 
+    nudge 25s infinite;
+    
 }
+@keyframes nudge {
+
+        0% {
+          transform: rotate(-12deg);
+          
+        }
+
+        33% {
+          transform: rotate(12deg);
+          
+        }
+
+        66% {
+          transform: rotate(-12deg);
+          
+        }
+        100% {
+          transform: rotate(12deg);
+          
+        }
+      }
+    /* @keyframes pulse {
+      0% {
+        background-color: none;
+      }
+      100% {
+        background-color: none;
+      }
+ } */
+
+
+
+  
+  
+
 
 .container #background {
     border-style: dashed;
