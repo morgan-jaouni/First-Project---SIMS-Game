@@ -37,7 +37,9 @@ h3 .begin {
     color:rebeccapurple;
     font-size: 15px;
     padding: 12px 24px;
-    border: none;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: rebeccapurple;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -46,6 +48,9 @@ h3 .begin {
     margin: 0;
     justify-content: center;
     display:flex;
+    border-style: dashed;
+    border-width: 3px;                
+    border-color: gold; 
 }
 
 /* //CONTAINER STYLING DECORATION ONLY  MODELED AFTER W3SCHOOLS */
@@ -58,7 +63,9 @@ h3 .begin {
     color: rebeccapurple;
     font-size: 15px;
     padding: 12px 24px;
-    border: none;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: rebeccapurple;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -71,7 +78,9 @@ h3 .begin {
     color:rebeccapurple;
     font-size: 14px;
     padding: 12px 24px;
-    border: none;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: rebeccapurple;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -84,7 +93,9 @@ h3 .begin {
     color:rebeccapurple;
     font-size:14px;
     padding: 12px 24px;
-    border: none;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: rebeccapurple;
     cursor: pointer;
     border-radius: 5px;
   }

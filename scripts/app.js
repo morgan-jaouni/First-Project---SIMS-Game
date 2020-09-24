@@ -120,7 +120,6 @@ const startTimer = function() {
             if (hunger >= 10 ) {
                 
                 gameOver=true; 
-                
                      
 
             } 
@@ -128,8 +127,7 @@ const startTimer = function() {
             if (boredom >= 10 ) {
 
                 gameOver=true;
-                
-                 
+                           
             } 
             //if sleep reaches 10 gary dies, game over
             if (sleep >= 10 ) {
