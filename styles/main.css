@@ -16,6 +16,8 @@ body {
   
 h2 {
   font-family: 'Oldenburg', cursive;
+    top: 3vh;
+    left: 60vh;
     margin: 5;
     padding: 5;
     background: #ff808b;
@@ -36,6 +38,7 @@ h2 {
 
 
 h2 .begin {
+    
     font-family: 'Oldenburg', cursive;
     background-color:  #f7e948;
     color:#ff808b;
@@ -59,7 +62,7 @@ h2 .begin {
   font-family: 'Oldenburg', cursive;
     flex-direction: column;
     position: absolute;
-    top: 55%;
+    top: 58%;
     left: 10%;
     background-color: #f7e948;
     color: #ff808b;
@@ -80,7 +83,7 @@ h2 .begin {
   font-family: 'Oldenburg', cursive;
     flex-direction: column;
     position: absolute;
-    top: 65%;
+    top: 68%;
     left: 10%;
     background-color: #f7e948;
     color:#ff808b;
@@ -101,7 +104,7 @@ h2 .begin {
   font-family: 'Oldenburg', cursive;
     flex-direction: column;
     position: absolute;
-    top: 75%;
+    top: 78%;
     left: 10%;
     background-color: #f7e948;
     color:#ff808b;
@@ -120,7 +123,7 @@ h2 .begin {
     }
 
   header {
-    /* background: rebeccapurple; */
+    
     color: gold;
     font-size: 20px;
     padding: 5px;
@@ -134,7 +137,7 @@ h2 .begin {
 .container #bob {
   position: absolute;
   top: 25vh;
-  right:95vh;
+  right:125vh;
   animation: linear infinite alternate;
   animation-name: linear;
   animation-duration: 2s;
@@ -158,7 +161,7 @@ h2 .begin {
   height: 80px;
   animation-duration: 2s;
   animation: 
-    nudge 5s infinite;
+    nudge 3s infinite;
     
 }
 @keyframes nudge {
@@ -168,21 +171,26 @@ h2 .begin {
           
         }
 
-        /* 33% {
+        33% {
           transform: rotate(12deg);
           
-        } */
+        } 
 
-        /* 66% {
+         66% {
           transform: rotate(-12deg);
-           */
-        /* } */
+           
+         } 
         100% {
           transform: rotate(15deg);
           
         }
       }
-   
+      .container #puff {
+        position: absolute;
+        top: 39vh;
+        right: 30vh;
+        height: 80px;
+      }
 
       .container #plank {
         position: absolute;
@@ -190,13 +198,20 @@ h2 .begin {
         right: -5vh;
         height: 90px;
       }
+      .container #patrick {
+        position: absolute;
+        top: 57vh;
+        right: 40vh;
+        height: 110px;
+      }
+      
 
     .container #home {
     font-family: 'Oldenburg', cursive;
     flex-direction: column;
     position: absolute;
     top: 45%;
-    left: 93%;
+    left: 91%;
     background-color: #f7e948;
     color:#ff808b;
     font-size:15px;
