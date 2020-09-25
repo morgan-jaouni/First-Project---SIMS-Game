@@ -18,11 +18,11 @@
 // Add buttons to the screen to feed your pet, turn off the lights, and play with your pet.
 //style with css
 //create an alert that welcomes user to game TODO: allow user input to name the snail 
-// alert('WELCOME TO TOMAGOTCHI! NAME YOUR PET SNAIL...FEED IT TO LOWER HUNGER (1-10).... PET IT TO KEEP IT FROM DYING OF BOREDOM....& TURN OFF THE LIGHTS WHEN ITS TIME FOR SLEEP....');
+confirm('WELCOME TO TOMAGOTCHI! NAME YOUR PET SNAIL...FEED IT TO LOWER HUNGER (1-10).... PET IT TO KEEP IT FROM DYING OF BOREDOM....& TURN OFF THE LIGHTS WHEN ITS TIME FOR SLEEP....');
 
 
 //Global Variables
-const startTime = 125;
+const startTime = 240;
 let time = startTime;
 let hunger = 5;
 let boredom = 5;
@@ -96,8 +96,8 @@ const startTimer = function() {
 
                 alert('GARY HAS GROWN UP! HE IS NOW 2!')
                 $(`#age`).text(`AGE: 2`);
-                //at 120s change images to morph pet
-                // document.getElementById('gary').src="feeding.png"
+                //at 120s change image to morph pet
+                document.getElementById('gary').src="garyold.png"
             }
           
             //-----increment hunger,boredom, sleep every 10 seconds----//
@@ -176,6 +176,7 @@ $('#pet').on('click', function() {
     }
     //update DOM
     $(`#boredom`).text(`BOREDOM: ${boredom}`)
+    document.getElementById('gary').src="pet.png"
     
 });
 
