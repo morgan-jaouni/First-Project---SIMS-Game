@@ -73,6 +73,7 @@ const resetGame = function() {
     gameOver = false;  
 
 }
+
 //CREATE TIMER FUNCTION THAT STARTS AT 240 and DECREMENTS TO 0
 const startTimer = function() {
     const timer = setInterval(function () {
@@ -154,7 +155,15 @@ const startTimer = function() {
 
 $('#feed').on('click', function() {
 
-    document.getElementById('gary').src="feeding.png"
+    //change img 
+    (document.getElementById('gary').src="feeding.png")
+    //change img back to original
+
+    setTimeout(function() {
+        
+        document.getElementById('gary').src="garyyy.png"}
+        , 2500);
+    
     // /click feed button to decrement hunger by 1 
     //if hunger reaches 0, stop decrementing
     if (hunger > 1) {
@@ -170,20 +179,39 @@ $('#feed').on('click', function() {
 
 $('#pet').on('click', function() {
 
+    
+    // /chang img
+    document.getElementById('bob').src="rock.png"
+    document.getElementById('gary').src="pet.png"
+    
+    //change image back to original
+    setTimeout(function() {
+
+        document.getElementById('bob').src="character.png"
+        document.getElementById('gary').src="garyyy.png"}
+        , 2500);
+    
     //click pet me button to decrement boredom by 1, stop decrementing at 1
     if (boredom > 1) {
     boredom--;
     }
     //update DOM
     $(`#boredom`).text(`BOREDOM: ${boredom}`)
-    document.getElementById('gary').src="pet.png"
-    
 });
 
 //ADD EVENT LISTENER FOR LIGHTS BUTTON
 
 $('#lights').on('click', function() {
     
+    //change image to sleeping
+    document.getElementById('bob').src="bobsleep.png"
+    document.getElementById('gary').src="sleeping.png"
+
+    //change image back to original
+    setTimeout(function() {
+        document.getElementById('bob').src="character.png"
+        document.getElementById('gary').src="garyyy.png"}
+        , 2500);
     //click lights function to decrement sleepiness by 1, stop decrementing at 1
     if ( sleep > 1) {
     sleep--;
@@ -191,10 +219,7 @@ $('#lights').on('click', function() {
     //update DOM
     $(`#sleep`).text(`SLEEPINESS: ${sleep}`)
 
-    //change image to sleeping
-    document.getElementById('gary').src="sleeping.png"
-    document.getElementById('bob').src="bobsleep.png"
-
+    
 });
 
 

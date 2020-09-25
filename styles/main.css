@@ -31,10 +31,7 @@ h2 {
     
 }
 
-h3 {
-    margin: 0;
-    text-align: center;
-}
+
 h2 .begin {
     font-family: 'Oldenburg', cursive;
     background-color:  #f7e948;
@@ -65,10 +62,10 @@ h2 .begin {
     font-size: 15px;
     padding: 12px 24px;
     border-style: dashed;
-    border-width: 3px;
+    border-width: 4px;
     border-color: #ff808b;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
   }
   .container #feed:hover {
     cursor: pointer;
@@ -85,10 +82,10 @@ h2 .begin {
     font-size: 17px;
     padding: 12px 24px;
     border-style: dashed;
-    border-width: 3px;
+    border-width: 4px;
     border-color: #ff808b;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
   }
   .container #lights:hover {
     cursor: pointer;
@@ -105,10 +102,10 @@ h2 .begin {
     font-size:17px;
     padding: 12px 24px;
     border-style: dashed;
-    border-width: 3px;
+    border-width: 4px;
     border-color: #ff808b;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
   }
   .container #pet:hover {
     cursor: pointer;
@@ -129,8 +126,8 @@ h2 .begin {
   /* position pet character in background image */
 .container #bob {
   position: absolute;
-  top: 38vh;
-  right: 76vh;
+  top: 32vh;
+  right: 110vh;
   animation: linear infinite alternate;
   animation-name: linear;
   animation-duration: 2s;
