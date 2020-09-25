@@ -18,13 +18,17 @@
 // Add buttons to the screen to feed your pet, turn off the lights, and play with your pet.
 //style with css
 //create an alert that welcomes user to game TODO: allow user input to name the snail 
-confirm('WELCOME! NAME YOUR PET SNAIL...FEED YOUR SNAIL TO LOWER HUNGER.... PLAY WITH YOUR SNAIL TO KEEP IT FROM DYING OF BOREDOM....& TURN OFF THE LIGHTS WHEN YOUR SNAIL GETS SLEEPY....');
-let person = prompt("Enter the name of your snail!", "Gary the Snail");
+// confirm('WELCOME! NAME YOUR PET SNAIL...FEED YOUR SNAIL TO LOWER HUNGER.... PLAY WITH YOUR SNAIL TO KEEP IT FROM DYING OF BOREDOM....& TURN OFF THE LIGHTS WHEN YOUR SNAIL GETS SLEEPY....');
+// let person = prompt("Enter the name of your snail!", "Gary the Snail");
 
-if (person != null) {
-    document.getElementById("name").innerHTML =
-        person;
-}
+// if (person != null) {
+//     document.getElementById("name").innerHTML =
+//         person;
+// }
+
+
+
+
 
 //Global Variables
 const startTime = 240;
@@ -166,19 +170,30 @@ const startTimer = function () {
 }
 
 
+setTimeout(function () {
+
+    document.getElementById('backdrop').src = "background.jpg";}
+        , 4500
+);
 //ADD EVENT LISTENER FOR FEED BUTTON
 
 $('#feed').on('click', function () {
 
     //change img 
-    (document.getElementById('gary').src = "feeding.png")
+    document.getElementById('backdrop').src = "krusty.png";
+    document.getElementById('gary').src = "feeding.png";
+    document.getElementById('plank').style.display="none";
+    document.getElementById('puff').style.display="none";
+    document.getElementById('patrick').style.display="none";
     //change img back to original
 
     setTimeout(function () {
 
-        document.getElementById('gary').src = "garyyy.png"
+        document.getElementById('gary').src = "garyyy.png";
+        document.getElementById('backdrop').src = "background.jpg";
     }
-        , 3500);
+        , 4500);
+
 
     // /click feed button to decrement hunger by 1 
     //if hunger reaches 0, stop decrementing
@@ -206,7 +221,7 @@ $('#pet').on('click', function () {
         document.getElementById('bob').src = "character.png"
         document.getElementById('gary').src = "garyyy.png"
     }
-        , 3500);
+        , 4500);
 
     //click pet me button to decrement boredom by 1, stop decrementing at 1
     if (boredom > 1) {
@@ -223,13 +238,18 @@ $('#lights').on('click', function () {
     //change image to sleeping
     document.getElementById('bob').src = "bobsleep.png"
     document.getElementById('gary').src = "sleeping.png"
+    document.getElementById('backdrop').src = "night.jpg";
+    document.getElementById('plank').style.display="none";
+    document.getElementById('puff').style.display="none";
+    document.getElementById('patrick').style.display="none";
 
     //change image back to original
     setTimeout(function () {
-        document.getElementById('bob').src = "character.png"
-        document.getElementById('gary').src = "garyyy.png"
+        document.getElementById('bob').src = "character.png";
+        document.getElementById('gary').src = "garyyy.png";
+        document.getElementById('backdrop').src = "background.jpg";
     }
-        , 3500);
+        , 4500);
     //click lights function to decrement sleepiness by 1, stop decrementing at 1
     if (sleep > 1) {
         sleep--;
@@ -253,8 +273,8 @@ $('#home').on('click', function () {
     setTimeout(function () {
 
         document.getElementById('backdrop').src = "background.jpg";}
-            , 4500
-    );
+            , 4500);
+    
 
 
 });
