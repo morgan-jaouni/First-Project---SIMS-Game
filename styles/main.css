@@ -2,6 +2,8 @@ body {
    
     padding: 0;
     margin: 0;
+    width: 1500px;
+    
     background: url("SPONGEBOBHOUSE.png");
     background-size: cover;
     overflow: hidden;
@@ -14,10 +16,11 @@ body {
   
 h2 {
   font-family: 'Oldenburg', cursive;
-    margin: 0 auto;
+    margin: 5;
+    padding: 5;
     background: #ff808b;
     position: absolute;
-    width: 30%;
+    width: 35%;
     color: #f7e948;
     font-size: 25px;
     text-align: center;
@@ -26,7 +29,7 @@ h2 {
     align-items: center;
     justify-content: center;
     border-style: dashed;
-    border-width: 7px;
+    border-width: 10px;
     border-color: #f7e948;
     
 }
@@ -43,6 +46,7 @@ h2 .begin {
     border-color: #ff808b;
     cursor: pointer;
     border-radius: 5px;
+    outline:none;
   }
   h2 .begin:hover {
     cursor: pointer;
@@ -66,6 +70,7 @@ h2 .begin {
     border-color: #ff808b;
     cursor: pointer;
     border-radius: 8px;
+    outline:none;
   }
   .container #feed:hover {
     cursor: pointer;
@@ -86,6 +91,7 @@ h2 .begin {
     border-color: #ff808b;
     cursor: pointer;
     border-radius: 8px;
+    outline:none;
   }
   .container #lights:hover {
     cursor: pointer;
@@ -100,12 +106,13 @@ h2 .begin {
     background-color: #f7e948;
     color:#ff808b;
     font-size:17px;
-    padding: 12px 24px;
+    padding: 12px 27px;
     border-style: dashed;
     border-width: 4px;
     border-color: #ff808b;
     cursor: pointer;
     border-radius: 8px;
+    outline:none;
   }
   .container #pet:hover {
     cursor: pointer;
@@ -126,8 +133,8 @@ h2 .begin {
   /* position pet character in background image */
 .container #bob {
   position: absolute;
-  top: 32vh;
-  right: 110vh;
+  top: 25vh;
+  right:95vh;
   animation: linear infinite alternate;
   animation-name: linear;
   animation-duration: 2s;
@@ -146,38 +153,58 @@ h2 .begin {
 
 .container #gary {
   position: absolute;
-  top: 83vh;
+  top: 75vh;
   right: 105vh;
   height: 80px;
   animation-duration: 2s;
   animation: 
-    nudge 25s infinite;
+    nudge 5s infinite;
     
 }
 @keyframes nudge {
 
         0% {
-          transform: rotate(-12deg);
+          transform: rotate(-15deg);
           
         }
 
-        33% {
+        /* 33% {
           transform: rotate(12deg);
           
-        }
+        } */
 
-        66% {
+        /* 66% {
           transform: rotate(-12deg);
-          
-        }
+           */
+        /* } */
         100% {
-          transform: rotate(12deg);
+          transform: rotate(15deg);
           
         }
       }
    
 
+      .container #plank {
+        position: absolute;
+        top: 19vh;
+        right: -5vh;
+        height: 90px;
+      }
 
-      
-
-  
+    .container #home {
+    font-family: 'Oldenburg', cursive;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 93%;
+    background-color: #f7e948;
+    color:#ff808b;
+    font-size:15px;
+    padding: 12px 24px;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: #ff808b;
+    cursor: pointer;
+    border-radius: 8px;
+    outline:none;
+    }

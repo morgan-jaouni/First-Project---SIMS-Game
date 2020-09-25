@@ -18,8 +18,13 @@
 // Add buttons to the screen to feed your pet, turn off the lights, and play with your pet.
 //style with css
 //create an alert that welcomes user to game TODO: allow user input to name the snail 
-confirm('WELCOME TO TOMAGOTCHI! NAME YOUR PET SNAIL...FEED IT TO LOWER HUNGER (1-10).... PET IT TO KEEP IT FROM DYING OF BOREDOM....& TURN OFF THE LIGHTS WHEN ITS TIME FOR SLEEP....');
+// confirm('WELCOME TO TOMAGOTCHI! NAME YOUR PET SNAIL...FEED IT TO LOWER HUNGER (1-10).... PET IT TO KEEP IT FROM DYING OF BOREDOM....& TURN OFF THE LIGHTS WHEN ITS TIME FOR SLEEP....');
+// let person = prompt("Please enter the name of your pet!", "Gary the Snail");
 
+// if (person != null) {
+//   document.getElementById("name").innerHTML =
+//   person ;
+// }
 
 //Global Variables
 const startTime = 240;
@@ -57,7 +62,8 @@ $('.begin').on('click', function() {
     // console.log('clicked..')
    
     startTimer();
-    
+    document.getElementById('bob').src="character.png"
+    document.getElementById('gary').src="garyyy.png"
 });
 // if (time === 120) {
 //     document.getElementById('gary');
@@ -162,7 +168,7 @@ $('#feed').on('click', function() {
     setTimeout(function() {
         
         document.getElementById('gary').src="garyyy.png"}
-        , 2500);
+        , 3500);
     
     // /click feed button to decrement hunger by 1 
     //if hunger reaches 0, stop decrementing
@@ -189,7 +195,7 @@ $('#pet').on('click', function() {
 
         document.getElementById('bob').src="character.png"
         document.getElementById('gary').src="garyyy.png"}
-        , 2500);
+        , 3500);
     
     //click pet me button to decrement boredom by 1, stop decrementing at 1
     if (boredom > 1) {
@@ -211,7 +217,7 @@ $('#lights').on('click', function() {
     setTimeout(function() {
         document.getElementById('bob').src="character.png"
         document.getElementById('gary').src="garyyy.png"}
-        , 2500);
+        , 3500);
     //click lights function to decrement sleepiness by 1, stop decrementing at 1
     if ( sleep > 1) {
     sleep--;
@@ -222,9 +228,18 @@ $('#lights').on('click', function() {
     
 });
 
+//Add event listener for GO HOME button 
+$('#home').on('click', function() {
+    
+    //change background image to spongebobs house 
+    (document.getElementById('backdrop').src="home.jpg")
+    
+    
+    setTimeout(function() {
+        (document.getElementById('backdrop').src="background.jpg")}
+        , 4500);
 
-
-
+});
 
 
 // Add the ability to name your pet.
