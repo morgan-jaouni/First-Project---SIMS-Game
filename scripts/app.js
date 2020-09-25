@@ -22,7 +22,7 @@
 
 
 //Global Variables
-const startTime = 240;
+const startTime = 125;
 let time = startTime;
 let hunger = 5;
 let boredom = 5;
@@ -50,9 +50,6 @@ class Pet {
  console.log(gary)
  
  
- 
- //say hello to user
-// console.log(gary.sayHello());
 
 // --------------------------------------STEP 1
 // ADD EVENT LISTENER FOR BEGIN BUTTON
@@ -62,7 +59,11 @@ $('.begin').on('click', function() {
     startTimer();
     
 });
-
+// if (time === 120) {
+//     document.getElementById('gary');
+// } 
+// else {
+//     document.getElementById('bob');
 //create function to reset the game after game over alert
 const resetGame = function() {
     hunger = 5;
@@ -95,10 +96,10 @@ const startTimer = function() {
 
                 alert('GARY HAS GROWN UP! HE IS NOW 2!')
                 $(`#age`).text(`AGE: 2`);
-                
+                //at 120s change images to morph pet
+                // document.getElementById('gary').src="feeding.png"
             }
-           
-           
+          
             //-----increment hunger,boredom, sleep every 10 seconds----//
             if ( time % 10 === 0) {
 
@@ -153,7 +154,7 @@ const startTimer = function() {
 
 $('#feed').on('click', function() {
 
-    
+    document.getElementById('gary').src="feeding.png"
     // /click feed button to decrement hunger by 1 
     //if hunger reaches 0, stop decrementing
     if (hunger > 1) {
@@ -181,13 +182,17 @@ $('#pet').on('click', function() {
 //ADD EVENT LISTENER FOR LIGHTS BUTTON
 
 $('#lights').on('click', function() {
-
+    
     //click lights function to decrement sleepiness by 1, stop decrementing at 1
     if ( sleep > 1) {
     sleep--;
     }
     //update DOM
     $(`#sleep`).text(`SLEEPINESS: ${sleep}`)
+
+    //change image to sleeping
+    document.getElementById('gary').src="sleeping.png"
+    document.getElementById('bob').src="bobsleep.png"
 
 });
 

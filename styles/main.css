@@ -1,9 +1,14 @@
 body {
-   background: rebeccapurple;
+   
     padding: 0;
     margin: 0;
+    /* background: url("SPONGEBOBHOUSE.png"); */
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
     
 }
+
 
 h1 {
     padding: 0;
@@ -14,8 +19,10 @@ h1 {
   
 h2 {
     margin: 0 auto;
+    background: #ff808b;
+    position: absolute;
     width: 30%;
-    color: gold;
+    color: #f7e948;
     font-size: 25px;
     text-align: center;
     display: flex;
@@ -24,84 +31,92 @@ h2 {
     justify-content: center;
     border-style: dashed;
     border-width: 7px;
-    
-    border-color:gold;
+    border-color: #f7e948;
 }
 
 h3 {
     margin: 0;
     text-align: center;
 }
-h3 .begin {
-    background-color: gold;
-    color:rebeccapurple;
+h2 .begin {
+  
+    background-color:  #f7e948;
+    color:#ff808b;
     font-size: 15px;
     padding: 12px 24px;
     border-style: dashed;
     border-width: 3px;
-    border-color: rebeccapurple;
+    border-color: #ff808b;
     cursor: pointer;
     border-radius: 5px;
   }
+  h2 .begin:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    }
 
-.container {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    justify-content: center;
-    display:flex;   
-}
-
+  
 /* //CONTAINER STYLING DECORATION ONLY  MODELED AFTER W3SCHOOLS */
 .container #feed {
     flex-direction: column;
     position: absolute;
-    top: 75%;
-    left: 21%;
-    background-color:gold;
-    color: rebeccapurple;
+    top: 55%;
+    left: 10%;
+    background-color: #f7e948;
+    color: #ff808b;
     font-size: 11.5px;
     padding: 12px 24px;
     border-style: dashed;
     border-width: 3px;
-    border-color: rebeccapurple;
+    border-color: #ff808b;
     cursor: pointer;
     border-radius: 5px;
   }
+  .container #feed:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    }
 .container #lights {
     flex-direction: column;
     position: absolute;
-    top: 60%;
-    left: 21%;
-    background-color:gold;
-    color:rebeccapurple;
+    top: 65%;
+    left: 10%;
+    background-color: #f7e948;
+    color:#ff808b;
     font-size: 14px;
     padding: 12px 24px;
     border-style: dashed;
     border-width: 3px;
-    border-color: rebeccapurple;
+    border-color: #ff808b;
     cursor: pointer;
     border-radius: 5px;
   }
+  .container #lights:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    }
 .container #pet {
     flex-direction: column;
     position: absolute;
-    top: 45%;
-    left: 21%;
-    background-color:gold;
-    color:rebeccapurple;
+    top: 75%;
+    left: 10%;
+    background-color: #f7e948;
+    color:#ff808b;
     font-size:14px;
     padding: 12px 24px;
     border-style: dashed;
     border-width: 3px;
-    border-color: rebeccapurple;
+    border-color: #ff808b;
     cursor: pointer;
     border-radius: 5px;
   }
-
+  .container #pet:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    }
 
   header {
-    background: rebeccapurple;
+    /* background: rebeccapurple; */
     color: gold;
     font-size: 20px;
     padding: 5px;
@@ -114,7 +129,7 @@ h3 .begin {
   /* position pet character in background image */
 .container #bob {
   position: absolute;
-  top: 18vh;
+  top: 23vh;
   right: 65vh;
 
   animation: linear infinite alternate;
@@ -129,15 +144,16 @@ h3 .begin {
     }
     100% {
       
-      transform: translateY(-70%);
+      transform: translateY(-100%);
     }
 }
 
 .container #gary {
   position: absolute;
-  top: 45vh;
+  top: 75vh;
   right: 42vh;
   height: 75px;
+  animation-duration: 2s;
   animation: 
     nudge 25s infinite;
     
@@ -163,25 +179,9 @@ h3 .begin {
           
         }
       }
-    /* @keyframes pulse {
-      0% {
-        background-color: none;
-      }
-      100% {
-        background-color: none;
-      }
- } */
+   
 
 
-
-  
-  
-
-
-.container #background {
-    border-style: dashed;
-    border-width: 15px;                
-    border-color: gold;
-}
+      
 
   
