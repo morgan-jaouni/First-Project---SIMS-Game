@@ -3,8 +3,7 @@
 
 
 
-
-
+https://i.imgur.com/baMKJJG.jpg
 
 
 
@@ -33,3 +32,66 @@
 //How to toggle lights? Toggling 'light' button will turn dark, characters will change
 
 //How does it die? If hunger or boredom reaches 10 the snail dies
+
+
+Technologies used: 
+-html, CSS, JavaScript, jQuery
+
+My approach to this game was to create the most basic game I possibly could. I started with a simple scoreboard that used Javascript to increment the hunger, etc. Then, I created buttons that decremented the scoreboard. Once I had these components working, I began to add on to the game. 
+
+Unsolved problems: 
+
+Performance issues - It seems when you click on one of the 4 buttons, it doesn't always change for 4.5 seconds like it is set to do in the JS function. 
+
+After the user clicks 'OK' on the alert that their pet died, I wanted the page to refresh so the user can play again. Currently, It will reset, but the increments reset at 10 instead of 5. 
+
+CSS issues - there is a sliver of white at the bottom of the screen when the window is full screen. 
+When the size of the window is altered, the characters move positions on the screen. 
+Some of the png characters are pixelated. 
+
+I wanted the png characters in the background to return after the duration of the click button. 
+
+
+
+
+Triumphs
+
+- Creating animations using keyframes and png characters
+
+- Writing a function for the animations that toggle different png characters and changes the background for a period of time based on which button is clicked, before returning back to the main screen
+
+-Creating buttons that allow the background to change for a period of time
+
+-I thought I did a satisfactory job utilizing comments in JavaScript/html
+
+
+
+
+
+Challenges
+
+
+-Creating an alert that allowed the user to input the name of their pet
+
+
+-Creating keyframes that allowed the animation to move along the 
+x-axis
+
+
+-Failed to utilize comments in css
+
+
+Code snippets 
+
+
+//set an alert when the page loads that allows user input 
+confirm('WELCOME!....');
+let person = prompt("Enter the name of your snail!", "Gary the Snail");
+
+if (person != null) {
+    document.getElementById("name").innerHTML =
+        person;
+}
+
+//Removes a character from the screen for the duration of the function 
+document.getElementById('puff').style.display="none";

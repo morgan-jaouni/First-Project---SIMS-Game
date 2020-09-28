@@ -45,18 +45,14 @@ console.log(gary)
 // --------------------------------------STEP 1
 // ADD EVENT LISTENER FOR BEGIN BUTTON
 $('.begin').on('click', function () {
-    // console.log('clicked..')
+   
 
     startTimer();
     document.getElementById('bob').src = "./images/character.png"
     document.getElementById('gary').src = "./images/garyyy.png"
 });
-// if (time === 120) {
-//     document.getElementById('gary');
-// } 
-// else {
-//     document.getElementById('bob');
-//create function to reset the game after game over alert
+
+
 const resetGame = function () {
     hunger = 5;
     sleep = 5;
@@ -257,8 +253,6 @@ $('#home').on('click', function () {
         document.getElementById('backdrop').src = "./images/background.jpg";}
             , 4500);
     
-
-
 });
 
 
