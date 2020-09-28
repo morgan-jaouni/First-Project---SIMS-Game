@@ -1,12 +1,4 @@
  
-
-
-
-
-//Create a 'scoreboard' for the game including name,age,hunger,boredom
-//Include 'begin' button
-// Add buttons to the screen to feed your pet, turn off the lights, and play with your pet.
-//style with css
 //create an alert that welcomes user to game TODO: allow user input to name the snail 
 confirm('WELCOME! NAME YOUR PET SNAIL...FEED YOUR SNAIL TO LOWER HUNGER.... PLAY WITH YOUR SNAIL TO KEEP IT FROM DYING OF BOREDOM....& TURN OFF THE LIGHTS WHEN YOUR SNAIL GETS SLEEPY....');
 let person = prompt("Enter the name of your snail!", "Gary the Snail");
@@ -56,8 +48,8 @@ $('.begin').on('click', function () {
     // console.log('clicked..')
 
     startTimer();
-    document.getElementById('bob').src = "character.png"
-    document.getElementById('gary').src = "garyyy.png"
+    document.getElementById('bob').src = "./images/character.png"
+    document.getElementById('gary').src = "./images/garyyy.png"
 });
 // if (time === 120) {
 //     document.getElementById('gary');
@@ -98,7 +90,7 @@ const startTimer = function () {
             alert('GARY HAS GROWN UP! HE\'S A TEENAGER!')
             $(`#age`).text(`AGE: 2`);
             //at 120s change image to morph pet
-            document.getElementById('gary').src = "teenager.png"
+            document.getElementById('gary').src = "./images/teenager.png"
         }
         //morph gary at the 120s minute mark 
         if (time === 120) {
@@ -106,7 +98,7 @@ const startTimer = function () {
             alert('GARY IS OLD!')
             $(`#age`).text(`AGE: 3`);
             //at 120s change image to morph pet
-            document.getElementById('gary').src = "garyold.png"
+            document.getElementById('gary').src = "./images/garyold.png"
         }
 
         //-----increment hunger,boredom, sleep every 10 seconds----//
@@ -162,7 +154,7 @@ const startTimer = function () {
 
 setTimeout(function () {
 
-    document.getElementById('backdrop').src = "background.jpg";}
+    document.getElementById('backdrop').src = "./images/background.jpg";}
         , 4500
 );
 //ADD EVENT LISTENER FOR FEED BUTTON
@@ -170,8 +162,8 @@ setTimeout(function () {
 $('#feed').on('click', function () {
 
     //change img 
-    document.getElementById('backdrop').src = "krusty.png";
-    document.getElementById('gary').src = "feeding.png";
+    document.getElementById('backdrop').src = "./images/krusty.png";
+    document.getElementById('gary').src = "./images/feeding.png";
     document.getElementById('plank').style.display="none";
     document.getElementById('puff').style.display="none";
     document.getElementById('patrick').style.display="none";
@@ -179,8 +171,8 @@ $('#feed').on('click', function () {
 
     setTimeout(function () {
 
-        document.getElementById('gary').src = "garyyy.png";
-        document.getElementById('backdrop').src = "background.jpg";
+        document.getElementById('gary').src = "./images/garyyy.png";
+        document.getElementById('backdrop').src = "./images/background.jpg";
     }
         , 4500);
 
@@ -202,14 +194,14 @@ $('#pet').on('click', function () {
 
 
     // /chang img
-    document.getElementById('bob').src = "rock.png"
-    document.getElementById('gary').src = "pet.png"
+    document.getElementById('bob').src = "./images/rock.png"
+    document.getElementById('gary').src = "./images/pet.png"
 
     //change image back to original
     setTimeout(function () {
 
-        document.getElementById('bob').src = "character.png"
-        document.getElementById('gary').src = "garyyy.png"
+        document.getElementById('bob').src = "./images/character.png"
+        document.getElementById('gary').src = "./images/garyyy.png"
     }
         , 4500);
 
@@ -226,18 +218,18 @@ $('#pet').on('click', function () {
 $('#lights').on('click', function () {
 
     //change image to sleeping
-    document.getElementById('bob').src = "bobsleep.png"
-    document.getElementById('gary').src = "sleeping.png"
-    document.getElementById('backdrop').src = "night.jpg";
+    document.getElementById('bob').src = "./images/bobsleep.png"
+    document.getElementById('gary').src = "./images/sleeping.png"
+    document.getElementById('backdrop').src = "./images/night.jpg";
     document.getElementById('plank').style.display="none";
     document.getElementById('puff').style.display="none";
     document.getElementById('patrick').style.display="none";
 
     //change image back to original
     setTimeout(function () {
-        document.getElementById('bob').src = "character.png";
-        document.getElementById('gary').src = "garyyy.png";
-        document.getElementById('backdrop').src = "background.jpg";
+        document.getElementById('bob').src = "./images/character.png";
+        document.getElementById('gary').src = "./images/garyyy.png";
+        document.getElementById('backdrop').src = "./images/background.jpg";
     }
         , 4500);
     //click lights function to decrement sleepiness by 1, stop decrementing at 1
@@ -254,7 +246,7 @@ $('#lights').on('click', function () {
 $('#home').on('click', function () {
 
     //change background image to spongebobs house 
-    document.getElementById('backdrop').src = "home.jpg";
+    document.getElementById('backdrop').src = "./images/home.jpg";
     document.getElementById('plank').style.display="none";
     document.getElementById('puff').style.display="none";
     document.getElementById('patrick').style.display="none";
@@ -262,7 +254,7 @@ $('#home').on('click', function () {
 
     setTimeout(function () {
 
-        document.getElementById('backdrop').src = "background.jpg";}
+        document.getElementById('backdrop').src = "./images/background.jpg";}
             , 4500);
     
 
@@ -270,12 +262,6 @@ $('#home').on('click', function () {
 });
 
 
-// Add the ability to name your pet.
-// Style the page.
-// Increase your pet's age every x minutes
-// Increase your pet's Hunger, Sleepiness, and Bored metrics on an interval of your choosing.
-// You pet should die if Hunger, Boredom, or Sleepiness hits 10.
-// Morph your pet at certain ages.
-// Animate your pet across the screen while it's alive.
+
 
 
