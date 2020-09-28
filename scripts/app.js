@@ -1,14 +1,4 @@
-//---------------------------USER STORIES
-//When the user arrives on the page an alert should allow user input to name their pet
-//The name, age(1-2), hunger(1-10), and boredom (1-10) should be shown in a 'scoreboard' format
-//The user will click begin to start the life of their pet
-//How long is the game? 6 minutes, the age will increment 1 at 3 minutes
-//How often does the hunger and boredom increase? Increment 1 every 15 seconds
-//When will pet morph? At the 3 minute mark 
-//How do you feed?Toggling 'feed' button decrements 1 hunger
-//How do you play? Toggling 'play' button decrements 1 boredom
-//How to toggle lights? Toggling 'light' button will turn background black
-//How does it die? If hunger or boredom reaches 10 the snail dies 
+ 
 
 
 
@@ -18,13 +8,13 @@
 // Add buttons to the screen to feed your pet, turn off the lights, and play with your pet.
 //style with css
 //create an alert that welcomes user to game TODO: allow user input to name the snail 
-// confirm('WELCOME! NAME YOUR PET SNAIL...FEED YOUR SNAIL TO LOWER HUNGER.... PLAY WITH YOUR SNAIL TO KEEP IT FROM DYING OF BOREDOM....& TURN OFF THE LIGHTS WHEN YOUR SNAIL GETS SLEEPY....');
-// let person = prompt("Enter the name of your snail!", "Gary the Snail");
+confirm('WELCOME! NAME YOUR PET SNAIL...FEED YOUR SNAIL TO LOWER HUNGER.... PLAY WITH YOUR SNAIL TO KEEP IT FROM DYING OF BOREDOM....& TURN OFF THE LIGHTS WHEN YOUR SNAIL GETS SLEEPY....');
+let person = prompt("Enter the name of your snail!", "Gary the Snail");
 
-// if (person != null) {
-//     document.getElementById("name").innerHTML =
-//         person;
-// }
+if (person != null) {
+    document.getElementById("name").innerHTML =
+        person;
+}
 
 
 

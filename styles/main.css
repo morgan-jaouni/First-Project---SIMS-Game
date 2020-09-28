@@ -139,11 +139,11 @@ h2 .begin {
   top: 25vh;
   right:125vh;
   animation: linear infinite alternate;
-  animation-name: linear;
+  animation-name: vert;
   animation-duration: 2s;
 }
 
-@keyframes linear {
+@keyframes vert {
     0% {
       
       transform: translateY(0);
@@ -190,7 +190,22 @@ h2 .begin {
         top: 39vh;
         right: 30vh;
         height: 80px;
-      }
+        animation: linear infinite alternate;
+        animation-name: linear;
+        animation-duration: 2s;
+}
+
+@keyframes linear {
+    0% {
+      
+      transform: translateX(0);
+    }
+    100% {
+      
+      transform: translateX(-75%);
+    }
+}
+      
 
       .container #plank {
         position: absolute;
