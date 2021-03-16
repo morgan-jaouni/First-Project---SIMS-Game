@@ -1,6 +1,6 @@
 ### Spongebob SIMS
 
-##### The goal of this project was to create a SIMS like game where you can interact and keep a pet alive.
+##### The goal of this project was to create a SIMS like game where the user can interact with a pet to keep it alive.
 
 
 ### USER STORIES
