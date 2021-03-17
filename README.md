@@ -32,7 +32,7 @@
 * JavaScript 
 * jQuery
 
-##### My approach to this game was to create the most basic game I possibly could. I started with a simple scoreboard that used Javascript to increment the hunger, etc. Then, I created buttons that decremented the scoreboard. Once I had these functions working, I began to add on to the game. 
+##### My approach to this game was to create the most basic game I possibly could(MVP). I started with a simple scoreboard that used Javascript to increment the hunger, etc. Then, I created buttons that decremented the scoreboard. Once I had these functions working, I began to add on to the game. 
 
 ### Unsolved problems:  
 
